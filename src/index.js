@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import Primeiro from './components/Primeiro'
+import Component from './components/Component-arrow'
+import ComParametro from './components/ComParametro'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Primeiro />
+    <Component />
+    <ComParametro       
+      titulo="Esse é o título"
+      subtitulo="E esse é o subtitulo" />
+    <ComParametro       
+      titulo="Opa, de novo?"
+      subtitulo="Epa, mesmo componente" />
+  </div>,
   document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+)
