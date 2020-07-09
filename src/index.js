@@ -1,21 +1,9 @@
-import './index.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import Primeiro from './components/Primeiro'
-import Component from './components/Component-arrow'
-import ComParametro from './components/ComParametro'
+import App from './App'
+import './index.css'
 
 ReactDOM.render(
-  <div>
-    <Primeiro />
-    <Component />
-    <ComParametro       
-      titulo="Esse é o título"
-      subtitulo="E esse é o subtitulo" />
-    <ComParametro       
-      titulo="Opa, de novo?"
-      subtitulo="Epa, mesmo componente" />
-  </div>,
+  <App></App>,
   document.getElementById('root')
 )
