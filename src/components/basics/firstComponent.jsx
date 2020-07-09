@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-function Primeiro() {
+function First() {
   return (
     <div>
       <h1>Primeiro</h1>
@@ -10,4 +10,4 @@ function Primeiro() {
   )
 }
 
-export default Primeiro
+export default First

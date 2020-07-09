@@ -1,37 +1,40 @@
 import React from 'react'
-import Primeiro from './components/Primeiro'
-import ComponentArrow from './components/Component-arrow'
-import ComParametro from './components/ComParametro'
-import ComFilhos from './components/ComFilhos'
-import Card from './components/layout/Card'
-import Repeticao from './components/Repeticao'
-import Condicional from './components/Condicional'
-import CondicionalComIf from './components/CondicionalComIf'
-import "./App.css"
+
+import Card from './components/layout/card'
+
+import First from './components/basics/firstComponent'
+import ComponentArrow from './components/basics/arrowFunction'
+import ComParametro from './components/basics/props'
+import ComFilhos from './components/basics/withChildren'
+import Repeticao from './components/basics/repetition'  
+import Condicional from './components/basics/condicional'
+import CondicionalComIf from './components/basics/conditionalWithIf'
+
+import "./app.css"
 
 
 export default (props) => (
 
-  <div className="App">
+  <div className="app">
 
-    <Card titulo="#01 - Primeiro componente">
-      <Primeiro />
+    <Card title="#01 - Primeiro componente">
+      <First />
     </Card>
 
-    <Card titulo="#02 - Componente com arrow">
+    <Card title="#02 - Componente com arrow">
       <ComponentArrow />
     </Card>
 
-    <Card titulo="#03 - Componente com parâmetro">
+    <Card title="#03 - Componente com parâmetro">
       <ComParametro       
-        titulo="Esse é o título"
-        subtitulo="E esse é o subtitulo" />
+        title="Esse é o título"
+        subtitle="E esse é o subtitle" />
       <ComParametro       
-        titulo="Opa, de novo?"
-        subtitulo="Epa, mesmo componente" />
+        title="Opa, de novo?"
+        subtitle="Epa, mesmo componente" />
     </Card>
 
-    <Card titulo="#04 - Com filhos">  
+    <Card title="#04 - Com filhos">  
       <ComFilhos>
         <ul>
           <li>Alexandre</li>
@@ -42,16 +45,16 @@ export default (props) => (
       </ComFilhos>
     </Card>
 
-    <Card titulo="#05 - Repetição">
+    <Card title="#05 - Repetição">
       <Repeticao></Repeticao>
     </Card>
 
-    <Card titulo="#06 - Condicional v1">
-      <Condicional numero={10} ></Condicional>
+    <Card title="#06 - Condicional v1">
+      <Condicional number={10} ></Condicional>
     </Card>
 
-    <Card titulo="#07 - Condicional v2 com if ">
-      <CondicionalComIf numero={11} ></CondicionalComIf>
+    <Card title="#07 - Condicional v2 com if ">
+      <CondicionalComIf number={11} ></CondicionalComIf>
     </Card>
 
   </div>
