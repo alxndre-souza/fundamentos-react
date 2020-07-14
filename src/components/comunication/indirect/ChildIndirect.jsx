@@ -2,13 +2,13 @@ import React from 'react'
 
 export default props => {
 
-  function acao() {
-    props.propriedadeDeClick(Math.random(), 'Gerado')
+  function action() {
+    props.propClick(Math.random(), 'Gerado')
   }
 
   return (
     <div>
-      <button onClick={acao}>
+      <button onClick={action}>
         Alterar
       </button>
     </div>

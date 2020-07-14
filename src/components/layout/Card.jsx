@@ -1,6 +1,6 @@
 
 import React from 'react'
-import './card.css'
+import '../../assets/style/components/card.css'
 
 export default props => 
   <div className="card" style={{borderColor: props.color || '#000'}}>

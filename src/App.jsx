@@ -1,18 +1,18 @@
 import React from 'react'
 
-import Card from './components/layout/card'
+import Card from './components/layout/Card'
 
-import First from './components/basics/firstComponent'
-import ComponentArrow from './components/basics/arrowFunction'
-import ComParametro from './components/basics/properties'
-import ComFilhos from './components/basics/withChildren'
-import Repeticao from './components/basics/repetition'  
-import Condicional from './components/basics/condicional'
-import CondicionalComIf from './components/basics/conditionalWithIf'
-import PaiDireta from './components/comunicacao/direta/PaiDireta'
-import PaiIndireta from './components/comunicacao/indireta/PaiIndireta'
-import Input from './components/form/input'
-import Contador from './components/contador/Contador'
+import First from './components/basics/FirstComponent'
+import ComponentArrow from './components/basics/ArrowFunction'
+import ComParametro from './components/basics/Properties'
+import ComFilhos from './components/basics/WithChildren'
+import Repeticao from './components/basics/Repetition'  
+import Condicional from './components/basics/Condicional'
+import CondicionalComIf from './components/basics/ConditionalWithIf'
+import PaiDireta from './components/comunicacao/direct/ParentDirect'
+import PaiIndireta from './components/comunicacao/indirect/ParentIndirect'
+import Input from './components/form/Input'
+import Counter from './components/contador/Counter'
 import Mega from './components/mega/Mega'
 
 import "./app.css"
@@ -67,11 +67,11 @@ export default (props) => (
       </Card>
 
       <Card title="#08 - Comunicação direta " color="#FFCA00">
-        <PaiDireta sobrenome="Souza"></PaiDireta>
+        <PaiDireta lastname="Souza"></PaiDireta>
       </Card>
 
       <Card title="#09 - Comunicação indireta " color="#1352A2">
-        <PaiIndireta sobrenome="Souza"></PaiIndireta>
+        <PaiIndireta></PaiIndireta>
       </Card>
 
       <Card title="#10 - Input " color="#69D2E7">
@@ -79,11 +79,11 @@ export default (props) => (
       </Card>
 
       <Card title="#11 - Contador " color="#5A6A62">
-        <Contador></Contador>
+        <Counter></Counter>
       </Card>
 
       <Card title="#12 - Mega" color="#5A0062">
-        <Mega qtdeNumeros={8}></Mega>
+        <Mega sizeNumber={8}></Mega>
       </Card>
 
     </div>
