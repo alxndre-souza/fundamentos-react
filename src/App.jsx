@@ -13,6 +13,7 @@ import PaiDireta from './components/comunicacao/direta/PaiDireta'
 import PaiIndireta from './components/comunicacao/indireta/PaiIndireta'
 import Input from './components/form/input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 import "./app.css"
 
@@ -73,12 +74,16 @@ export default (props) => (
         <PaiIndireta sobrenome="Souza"></PaiIndireta>
       </Card>
 
-      <Card title="#10 - input " color="#69D2E7">
+      <Card title="#10 - Input " color="#69D2E7">
         <Input></Input>
       </Card>
 
-      <Card title="#11 - input " color="#5A6A62">
+      <Card title="#11 - Contador " color="#5A6A62">
         <Contador></Contador>
+      </Card>
+
+      <Card title="#12 - Mega" color="#5A0062">
+        <Mega qtdeNumeros={8}></Mega>
       </Card>
 
     </div>
